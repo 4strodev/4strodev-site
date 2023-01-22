@@ -2,6 +2,7 @@
 title: "Advanced routing"
 date: 2023-01-22T22:24:06+01:00
 draft: true
+weight: 3
 ---
 1. You can use wildcards
 2. You can add constraints

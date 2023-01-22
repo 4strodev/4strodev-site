@@ -197,4 +197,4 @@ In this case we have seen basic routing but fiber gives us more useful tools to 
 - Groups
 - Middlewares
 
-> I reccommend you to visit [fiber docs](https://gofiber.io) to se more details about the frameowrk
+> I reccommend you to visit [fiber docs](https://gofiber.io) to se more details about the framework
