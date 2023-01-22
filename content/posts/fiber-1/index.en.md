@@ -2,6 +2,7 @@
 title: "Fiber 1"
 date: 2023-01-22T13:49:16+01:00
 draft: false
+tags: [fiber, go]
 ---
 
 # Resume

@@ -46,6 +46,11 @@ paginate = 5
         name = "About"
         url = "/pages/about"
 
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags"
+
 [module]
   # this is needed when you fetch the theme as a submodule to your repo.
   # replacements = "github.com/panr/hugo-theme-hello-friend -> themes/hello-friend"
