@@ -1,58 +1,46 @@
-baseURL = '/'
+baseURL = ''
 languageCode = 'en-us'
 title = '4strodev'
-paginate = 5
+theme = ["github.com/Mitrichius/hugo-theme-anubis"]
+disqusShortname = "asd;likfaj"
+
+[[menu.main]]
+identifier = 'archive'
+name = 'Archive'
+title = 'Archive'
+url = '/posts/'
+weight = 1
+
+[[menu.main]]
+identifier = 'tags'
+name = 'Tags'
+title = 'Tags'
+url = '/tags/'
+weight = 2
+
+[[menu.main]]
+identifier = 'about'
+name = 'About'
+title = 'About'
+url = '/pages/about/'
+weight = 3
+
+[[menu.main]]
+identifier = 'about-me'
+name = 'About Me'
+title = 'About Me'
+url = '/pages/me/'
+weight = 4
+
 
 [params]
-	contentTypeName = "posts"
-	defaultTheme = "dark"
-	showMenuItems = 2
-	showReadingTime = false
+style = 'auto'
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+readMore = true
+author = "4strodev"
+description = "A description"
 
-[languages]
-	[languages.en]
-    title = "4strodev"
-    subtitle = "A web made for a geek for geeks"
-    keywords = "4strodev programming web backend"
-    copyright = "4strodev"
-    menuMore = "Show more"
-    writtenBy = "Written by"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    minuteReadingTime = "min read"
-    dateFormatSingle = "2006-01-02"
-    dateFormatList = "2006-01-02"
-    # leave empty to disable, enter display text to enable
-    # lastModDisplay = ""
+[markup.goldmark.renderer]
+unsafe = true
 
-    [languages.en.params.logo]
-      logoText = "4strodev"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "me"
-        name = "Me"
-        url = "/pages/me"
-
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/pages/about"
-
-      [[languages.en.menu.main]]
-        identifier = "tags"
-        name = "Tags"
-        url = "/tags"
-
-[module]
-  # this is needed when you fetch the theme as a submodule to your repo.
-  # replacements = "github.com/panr/hugo-theme-hello-friend -> themes/hello-friend"
-[[module.imports]]
-  path = 'github.com/panr/hugo-theme-hello-friend'

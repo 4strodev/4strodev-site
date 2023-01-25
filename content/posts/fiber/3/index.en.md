@@ -13,7 +13,7 @@ weight: 3
 
 > See [constraints page](https://docs.gofiber.io/guide/routing#constraints) for more information
 
-{{< code language="go" title="Example: Route can be called without query params" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```go
 package main
 
 import (
@@ -42,4 +42,4 @@ func main() {
 	// Start server at port 3000 and log returned error if server fails
 	log.Fatal(app.Listen(":3000"))
 }
-{{< /code >}}
+```

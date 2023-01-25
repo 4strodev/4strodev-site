@@ -21,7 +21,7 @@ a route using GET verb you have to use `Get` method. The same for `Post` `Put` `
 I reccomend to see [fiber package docs](https://pkg.go.dev/github.com/gofiber/fiber/v2#Delete)
 for a full list of available methods.
 
-{{< code language="go" title="Example: HTTP verbs" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```go
 package main
 
 import (
@@ -52,7 +52,7 @@ func main() {
 	// Start server at port 3000 and log returned error if server fails
 	log.Fatal(app.Listen(":3000"))
 }
-{{< /code >}}
+```
 
 ## Paths
 There are moment that our application needs to recieve parameters from the client.
@@ -65,7 +65,7 @@ is data that will be used to differenciate a resource. A unique username, an ID,
 
 1. If route is called without param fiber will return a 404 error.
 
-{{< code language="go" title="Example: Route can be called without query params" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```
 package main
 
 import (
@@ -94,7 +94,7 @@ func main() {
 	// Start server at port 3000 and log returned error if server fails
 	log.Fatal(app.Listen(":3000"))
 }
-{{< /code >}}
+```
 
 - ### Query params
 If we have to pass multiple params to a route we can use query params. We can use query params
@@ -102,7 +102,7 @@ to do the same as we use route params. But with two differences.
 
 1. The route can be called if there are no query params. So we have to make a manual check.
 
-{{< code language="go" title="Example: Route params" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```go
 package main
 
 import (
@@ -136,11 +136,11 @@ func main() {
 	// Start server at port 3000 and log returned error if server fails
 	log.Fatal(app.Listen(":3000"))
 }
-{{< /code >}}
+```
 
 2. We can send multiple params in the same route.
 
-{{< code language="go" title="Example: Route params" expand="Show" collapse="Hide" isCollapsed="true" >}}
+```go
 package main
 
 import (
@@ -179,7 +179,7 @@ func main() {
 	// Start server at port 3000 and log returned error if server fails
 	log.Fatal(app.Listen(":3000"))
 }
-{{< /code >}}
+```
 
 - ### Body params
 Body params can be a complex structure of data that the client are sending to us.
